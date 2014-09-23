@@ -50,9 +50,44 @@
               <div class="tab-pane active" id="print">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="column-sm-12">
+                    <div class="col-sm-12">
                       <h3>Print, scan &amp; copy</h3>
                       <hr class="orange-line">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <h4>This is a tab subtitle in a left column</h4>
+                      <p>If you want to insert columns into some tab content that is not set up for columns, it's easy to do!</p>
+                      <p>When there is no column environment, the code looks like this:</p>
+                      <pre>
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-12"&gt;
+    &lt;h4&gt;Tab Subtitle&lt;/h4&gt;
+    &lt;p&gt;Tab content ...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                      </pre>
+                      <p>The layout class on the second <code>div</code> above means <em>make this <code>div</code> a column that is twelve units wide, even on a small screen</em>.</p>
+                      <p>This layout style is a part of <a href="http://getbootstrap.com/css/#grid">Bootstrap's grid layout</a>, which is a library of style rules that help you control web page layout. The grid is based on <code>rows</code> that can be up to twelve units wide.</p>
+                      <p>So if you want to present a two-column layout, that code will look something like this:</p>
+                      <pre>
+&lt;div class="row"&gt;
+  &lt;div class="col-sm-6"&gt;
+    &lt;h4&gt;Left column tab Subtitle&lt;/h4&gt;
+    &lt;p&gt;Tab content ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class="col-sm-6"&gt;
+    &lt;h4&gt;Right column tab Subtitle&lt;/h4&gt;
+    &lt;p&gt;Tab content ...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+                      </pre>
+                      <p><strong>Notice here how each of the two 6-unit columns are nested within the same <code>row</code></strong>.</p>
+                    </div>
+                    <div class="col-sm-6">
+                      <h4>And this is a column on the right</h4>
+                      <p><em>Check out the text in the left column to learn how to create a two-column layout!</em></p>
                     </div>
                   </div>
                 </div>
@@ -62,7 +97,7 @@
               <div class="tab-pane" id="software">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="column-sm-12">
+                    <div class="col-sm-12">
                       <h3>Computers &amp; software</h3>
                       <hr class="orange-line">
                     </div>
@@ -74,7 +109,7 @@
               <div class="tab-pane" id="find">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="column-sm-12">
+                    <div class="col-sm-12">
                       <h3>Find &amp; borrow</h3>
                       <hr class="orange-line">
                     </div>
@@ -86,7 +121,7 @@
               <div class="tab-pane" id="howdoi">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="column-sm-12">
+                    <div class="col-sm-12">
                       <h3>How do I ..... ?</h3>
                       <hr class="orange-line">
                     </div>
@@ -98,7 +133,7 @@
               <div class="tab-pane" id="ask">
                 <div class="container-fluid">
                   <div class="row">
-                    <div class="column-sm-12">
+                    <div class="col-sm-12">
                       <h3>Ask a librarian</h3>
                       <hr class="orange-line">
                     </div>
