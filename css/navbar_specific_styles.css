@@ -1,0 +1,202 @@
+@charset: "UTF-8";
+
+/*
+ * These styles were copied from the development site 
+ * for the as-of-yet (Fall 2014) new Library site design.
+ * 
+ * These styles only relate to the new design's navbar content
+ * that makes use of Bootstrap's toggable tabs (Tabs.js).
+ *
+ * The purpose of adopting these styles was to recreate the
+ * new site's orange navigation bar & tabbed navigation content
+ * in the Learn Library's sub-site. (library.illinois.edu/learn)
+ *
+ * These styles came from two separate stylesheets of the new 
+ * Library site design:
+ * 1. homepage_layouts.css
+ * 2. homepage_colors_fonts.css
+ *
+ * Author: Brian Zelip, Scholarly Commons GA, Fall 2014
+ *
+ ***************************************************************/
+
+
+/*
+ * 1. Styles from homepage_layouts.css
+ *    http://gateway-dev.library.illinois.edu/assets/css/homepage_layouts.css
+ */
+
+.navbar {
+  margin: 0;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.navbar-toggle { margin: 0 auto; }
+
+.navbar-nav {
+  float: none;
+  display: table;
+  table-layout: fixed;
+  margin: 0 auto !important;
+}
+
+.navbar-nav>li {
+  /*center navbar elements when on two rows*/
+  float: none;
+  display: inline-block;
+}
+@media (min-width: 768px) {
+  .navbar-nav>li {
+    /*center navbar elements when on two rows*/
+    float: none;
+    display: inline-block;
+  }
+}
+
+.nav-tabs {
+  float: none;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .nav-tabs>li {
+    /*center navbar elements when on two columns*/
+    float: none;
+    display: inline-block;
+  }
+}
+
+nav.navbar-bottom {
+  margin-top: 3%;
+  margin-bottom: 0;
+}
+
+.navbar-collapse.in { overflow-y: visible; }/*prevent scrollbar in collapse*/
+
+.navbar-toggle {
+  /*center collapse button*/
+  float: none;
+  margin-right: 0;
+}
+
+#navigation-navbar-collapse .navbar-nav li { padding-right:30px !important; }
+
+#info-tabs-navbar-collapse .navbar-nav li { padding-right:25px !important; }
+
+.panel-button {
+  width: 100px;
+  height: 33px;
+}
+
+.tab-pane { padding: 16px; }
+
+
+/*
+ * 2. Styles from homepage_colors_fonts.css
+ *    http://gateway-dev.library.illinois.edu/assets/css/homepage_colors_fonts.css
+ */
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+.panel-default { border-color: #bbb; }
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+hr { border-top: 1px solid #bbb; }
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+  border: 1px solid #bbb;
+  border-bottom: 1px solid transparent;
+}
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+.nav-tabs>li>a:hover {
+  border-bottom: 1px solid #bbb;
+  border: 1px solid #transparent;
+}
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+.nav-tabs { border-bottom: 1px solid #bbb; }
+
+/* OVERRIDE THE BOOTSTRAP DEFAULT */
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+  text-transform: uppercase;
+}
+
+.list-group-item { border: 1px solid #bbb; }
+
+.navigation-collapse-text { font-size: medium; }
+
+.navigation-collapse-inverse-text {
+  color: white;
+  font-size: medium;
+}
+
+.h6 { font-weight: 400; }
+
+h3,
+.h3 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: #1d407b;
+}
+
+.h3-inverse {
+  color: #FFF;
+  margin-top: 0;
+}
+
+.h4-searchin { color: #FFF; }
+
+.siteheader {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #FFF;
+  padding-left: 30px;
+}
+
+.dropdown {
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.dropdown-menu {
+  text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-default { border-color: #f8f8f8; }
+
+/* ORANGE DYNAMIC TABS */
+.navbar-inverse {
+  background-color: #c95f17;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 5px solid #FFA466;
+  margin-bottom: 0px;
+}
+
+.navbar-inverse .navbar-nav > li > a { color: #fff; }
+
+.navbar-inverse .navbar-nav > li > a:hover { background-color: #dd6c2a; }
+
+.tab_label {
+  display: inline-block;
+  padding-left: 8px;
+  font-size: 1.2em;
+  letter-spacing: .05em;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus  {
+  background-color: #F47F24; /* bright orange */
+  color: #fff;
+}
+
+hr.orange-line { border: 3px solid #ffa466; }

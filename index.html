@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/navbar_specific_styles.css">
+    <script src="//cdn.jsdelivr.net/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <title>LEARN to Use the Library</title>
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+      <div class="row" id="dynamictabs">
+        <div class="col-md-12">
+          <div class="panel panel-default">
+
+            <nav class="navbar navbar-inverse" role="navigation">
+
+              <!-- nav for smaller devices-->
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#info-tabs-navbar-collapse" id="info-tabs-collapse-btn">
+                <div class="navigation-collapse-inverse-text" id="info-collapse-text">
+                  Hours and Location
+                </div>
+              </button>
+
+              <!-- nav for larger devices-->
+              <div class="collapse navbar-collapse" id="info-tabs-navbar-collapse">
+                <ul class="nav navbar-nav" role="tablist" id="info-tab-list">
+                  <li id="print-li"><a href="#print" data-toggle="tab"><span class="fa fa-copy fa-3x"></span> <div class="tab_label">Print, scan &amp;<br>copy</div></a></li>
+                  <li id="software-li"><a href="#software" data-toggle="tab"><span class="fa fa-laptop fa-3x"></span><div class="tab_label">Computers &amp;<br>software</div></a></li>
+                  <li id="find-li"><a href="#find" data-toggle="tab"><span class="fa fa-book fa-3x"></span><div class="tab_label">Find &amp;<br>borrow</div></a></li>
+                  <li id="how-li"><a href="#howdoi" data-toggle="tab"><span class="fa fa-question-circle fa-3x"></span><div class="tab_label">How do<br>I ..... ?</div></a></li>
+                  <li id="ask-li"><a href="#ask" data-toggle="tab"><span class="fa fa-comments-o fa-3x"></span><div class="tab_label">Ask a<br>librarian</div></a></li>
+                </ul>
+              </div>
+
+            </nav>
+
+            <!-- end nav bar, begin nav bar content -->
+
+            <div class="tab-content">
+
+              <!-- Print, scan & copy tab -->
+              <div class="tab-pane active" id="print">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="column-sm-12">
+                      <h3>Print, scan &amp; copy</h3>
+                      <hr class="orange-line">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Computers & software tab -->
+              <div class="tab-pane" id="software">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="column-sm-12">
+                      <h3>Computers &amp; software</h3>
+                      <hr class="orange-line">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Find & borrow tab -->
+              <div class="tab-pane" id="find">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="column-sm-12">
+                      <h3>Find &amp; borrow</h3>
+                      <hr class="orange-line">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- How do I? tab -->
+              <div class="tab-pane" id="howdoi">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="column-sm-12">
+                      <h3>How do I ..... ?</h3>
+                      <hr class="orange-line">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Ask a librarian tab -->
+              <div class="tab-pane" id="ask">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="column-sm-12">
+                      <h3>Ask a librarian</h3>
+                      <hr class="orange-line">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div><!--/.tab-content (end nav bar content tabs) -->
+
+          </div><!--/.panel panel-default -->
+        </div><!--/.col-md-12 -->
+      </div><!--/.row -->
+    </div><!--/.container -->
+
+  </body>
+
+</html>
