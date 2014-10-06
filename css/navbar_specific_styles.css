@@ -200,3 +200,10 @@ h3,
 }
 
 hr.orange-line { border: 3px solid #ffa466; }
+
+/* iWONDER ASK A LIBRARIAN CHAT WIDGET */
+.iwonder-container {
+  padding: 1.5rem;
+  background-color: #1F3761;
+}
+/* note: there's a css file linked in the iWonder script markup in the html. That css file has 1 rule that styles the widget <iframe>'s header image position. */
